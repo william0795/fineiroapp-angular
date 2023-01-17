@@ -1,0 +1,22 @@
+
+
+
+    ::ng-deep .swal2-header{
+        font-size: 13px;
+    }
+    
+    ::ng-deep .swal2-title{
+        font-family: "Open Sans", "Helvetica", "Arial", "serif" ;
+        text-align: right;
+        font-weight: 200;
+        line-height: normal;
+    }
+    
+    ::ng-deep .swal2-container.swal2-top-end.swal2-backdrop-show{
+        padding-top: 120px;
+        padding-right: 33px;
+        max-width: 800px;
+    }
+    ::ng-deep .swal2-popup.swal2-toast.swal2-show{
+        z-index: 50000;
+    }

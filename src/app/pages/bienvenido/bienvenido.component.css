@@ -1,0 +1,40 @@
+.body-right.bienvenido{
+  background-color: #3962e6;
+}
+.body-right.bienvenido{
+  padding-bottom: 16%;
+}
+.card-imgm.bienvenida{
+  width: 93%;
+  padding-top: 30%;
+}
+.row{
+  display: block;
+}
+.btn{
+  border-radius: 7px;
+}
+.main-content.selec-suc {
+  height: 91%;
+}
+table thead{
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  position: sticky;
+  padding: 1em 2% 0;
+  top: 0px;
+  z-index: 2;
+}
+table tbody{
+  background-color: white;
+}
+.table-content{
+  padding-top: 6%;
+  text-align: center;
+}
+table thead th{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+

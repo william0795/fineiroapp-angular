@@ -1,0 +1,83 @@
+<div class="header-mobile" style="display:none;">
+  <img src="assets/images/veris/veris-mobileu.png" style=" width: 100%; " alt="">
+</div>
+<div class="content-login">
+  <div class="form-login animated fadeInLeft">
+    <div class="container login">
+        <div class="wrap-login100">
+          <div class="logo-phantom">
+            <img src="../../../assets/images/logo/logo-fineiro-white.png" alt="">
+          </div>
+            <form (ngSubmit)="onSubmit(f)"
+                   #f="ngForm"
+            class="validate-form flex-sb flex-w login-form">
+                <h1 class="login100-form-title p-b-51">
+                    Iniciar Sesión
+                </h1>
+                <div *ngIf="!next" class="wrap-input100 animated fadeInLeft">
+                  <div class="wrap-input100 m-b-16">
+                    <label class="login-primary"> Usuario o Correo Electrónico</label>
+                    <input class="form-control login"
+                           type="email"
+                           name="email"
+                           id="email"
+                           [(ngModel)]="usuario.email"
+                           (keyup)="activab(usuario.email)"
+                           #email="ngModel"
+                           required
+
+                           >
+                      <span *ngIf="f.submitted && f.controls['email'].errors || erroruVU"
+                             class="text-danger user verifica animated fadeIn">{{error}}</span>
+
+                  </div>
+                  <div class="wrap-input100 m-b-16" data-validate = "Password is required">
+                    <label class="login-primary"> Contraseña </label>
+                    <input class="form-control pass"
+                           [ngClass]="{'errors-log': errorlog, 'showPassI': !showPF }"
+                          [type]="typeInputF"
+                           id="password"
+                           name="password"
+                           required
+                           [(ngModel)]="usuario.password"
+                           (keyup)="activabl(usuario.password)"
+                           >
+                           <label *ngIf="showPF" (click)="mostrarPassword()" type="button" name="button"><i class="fa fa-eye showPass" aria-hidden="true"></i></label>
+                           <label *ngIf="!showPF" (click)="mostrarPassword()" type="button" name="button"><i class="fa fa-eye-slash showPass" aria-hidden="true"></i></label>
+                      <span class="focus-input100"></span>
+                      <span *ngIf="errorlog"
+                            class="text-danger animated fadeIn cont-inv">Contraseña no válida. </span>
+                  </div>
+
+                  <div class="container-login100-form-btn">
+                      <button 
+                              class="btn btn-outline-primary w-100 log-button" type="submit">
+                          Entrar
+                      </button>
+                  </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<app-loadings *ngIf="activapopup"></app-loadings>
+
+</div>
+<!-- *ngIf="popupResetCont" -->
+
+<div *ngIf="erroru"  class="popup-inactiva-user">
+  <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">
+    <div aria-labelledby="swal2-title" aria-describedby="swal2-content" class="swal2-popup swal2-modal swal2-show popup-suc active-user loading errorMensaje" tabindex="-1" role="dialog" aria-live="assertive" aria-modal="true" style="display: flex;">
+      <div class="text-inac">
+        <h2 class="title-suc iu">{{errorTitle}}</h2>
+            <p class="text-loading">{{error}} </p>
+      </div>
+      <button class="btn btn-regfa selectRol errorMensaje"
+              (click)="cerrarerror()"
+              type="button"
+              id="errorbtn"
+              name="button">Aceptar</button>
+    </div>
+  </div>
+</div>

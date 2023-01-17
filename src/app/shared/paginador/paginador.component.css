@@ -1,0 +1,53 @@
+
+
+@font-face {
+    font-family: open-sans !important;
+    src: url("/../../../../../assets/fonts/open/open-sans.ttf  ") format("opentype");
+}
+
+
+div{
+    font-family: "Open Sans", "Helvetica", "Arial", "serif" !important;
+    font-size: 12px !important;
+}
+
+
+
+/deep/ .page-link {
+    border-radius: 50px !important;
+    margin-left: 12px;
+    color: black;
+    border-color: white;
+    font-size: 12px;
+}
+
+/deep/ .page-item.disabled .page-link {
+    border-color: white;
+}
+
+/deep/ .page-item.active .page-link {
+    border-radius: 50px !important;
+    background-color: white;
+    color: #007bff;
+    border-color: #007bff !important;
+}
+
+
+/deep/ .page-item.disabled .page-link span{
+    font-size: 50px;;
+}
+
+@media only screen and (max-width: 768px){
+    /deep/  .page-item{
+      display: none;
+    }
+    /deep/  .page-item.active
+    {
+      display: block;
+    }
+    /deep/  .page-item:nth-last-child(-n+2),
+    /deep/  .page-item:first-child,
+    /deep/  .page-item:nth-child(2) {
+        display: block; 
+    }
+}

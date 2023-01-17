@@ -1,0 +1,31 @@
+
+
+<div id="webcam-wrapper" class="webcam-wrapper" (click)="imageClick.next();">
+    <video
+        id="video"
+        #video
+        [width]  = "videoWidth"
+        [height] = "videoHeight"
+        [class]  = "videoStyleClasses"
+        style="position: relative"
+        autoplay muted playsinline
+        (resize) = "videoResize()">
+    </video>
+
+    <!-- <div
+        class="camera-switch"
+        style ="position: absolute;"
+        *ngIf="allowCameraSwitch && availableVideoInputs.length > 1 && videoInitialized"
+        (click)="rotateVideoInput(true)">
+    </div> -->
+
+    <br>
+    <p  class="text-reco active-camara"
+        *ngIf="allowCameraSwitch && availableVideoInputs.length > 1 && videoInitialized"
+        (click)="rotateVideoInput(true)">Seleccionar Cámara</p>
+
+
+    <canvas #canvas [hidden]="hiddenCanva" [width]="width" [height]="height" style ="position: absolute;"></canvas>
+    <!-- <canvas id="canvaFace" style="position: absolute;"></canvas>  -->
+
+</div>

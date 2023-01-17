@@ -1,0 +1,78 @@
+.navbar.bg-light.mostLogo{
+  padding: 3%;
+}
+.data-user-menu.perfil.disabled{
+  color: #dbe0e4;
+}
+.data-user-menu.perfil.disabled:hover{
+  text-decoration: none;
+}
+.nav-link.disabeledSucursalHeader{
+  color:#c0c0c0 !important;
+}
+.image-date-user-menu{
+  width: 20%;
+  float: left;
+  padding-top: 1.4%;
+}
+.info-date-user-menu{
+  width: 80%;
+  float: right;
+  display: -ms-grid;
+  display: grid;
+  padding-left: 10%;
+}
+.data-user-menu{
+  display: block;
+  font-size: 11px;
+}
+.data-user-menu.perfil{
+  color: #0000FF;
+}
+.data-user-menu.perfil:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.date-user-menu{
+  border-bottom: 1px solid #dfe4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 6%;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  left: -127%;
+  min-width: 15rem;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu.authMail{
+  left: -12%;
+}
+.data-user-menu.correo{
+  color: #dbe0e4;
+}
+.nav-item.dropdown.sucursal{
+  padding-left: 4%;
+  border-right: 1px solid #dfe4e7;
+  padding-right: 13px;
+  margin-right: 11px;
+}
+.logo-ph-nav{
+  margin-bottom: 5%;
+}
+.fa-chevron-down.suc{
+  padding-left: 4px;
+}
+.dropdown-item{
+  font-size: 12px;
+}
+.cont-option{
+  float: right;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}

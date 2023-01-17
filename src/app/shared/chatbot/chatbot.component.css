@@ -1,0 +1,131 @@
+.content-chatbot{
+    color: white;
+    background-color: #2176FF;
+    border-color: #2176FF;    
+  }
+
+.content-chatbot-header{
+    color: white;
+    background-color: #2176FF;
+    border-color: #2176FF;
+    height: 40px;    
+    font-size: 12px !important;
+
+  }
+.search-user.ayuda{
+  position: absolute;
+  bottom: 24px;
+  left: 30px;
+}
+.form-control{
+  padding-left: 7%;
+}
+  .card-body {
+    padding-top: 8%;
+    padding-left: 8%;
+}
+/deep/ p.userRequest {
+    color: white;
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    min-width: 50%;
+    max-width: 85%;
+    float: left;
+    background-color: #2176FF;
+    font-size: 12px !important;
+}
+
+ /deep/ p.lexResponse {
+    margin: 4px !important;
+    padding: 4px 10px 4px 10px !important;
+    border-radius: 4px !important;
+    text-align: justify !important;
+    min-width: 50% !important;
+    max-width: 85% !important;
+    float: right !important;
+    /* color: white; */
+    /* background-color: #2fcc71 !important; */
+    border-width: thin;
+    border-style: solid;
+    border-color: #2fcc71;
+    font-style: italic !important;    
+    font-size: 12px !important;
+}
+/deep/ .cardChatHeight90{
+  height: 90% !important;
+}
+/deep/ .cardChatHeight83{
+  height: 83% !important;
+}
+/deep/ .lexResponseCard {
+    margin: 4px !important;
+    padding: 4px 10px 4px 10px !important;
+    border-radius: 4px !important;
+    text-align: right !important;
+    min-width: 50% !important;
+    max-width: 90% !important;
+    float: right !important;
+    /* color: white; */
+    /* background-color: #2fcc71 !important; */
+    border-width: thin;
+    border-style: solid;
+    border-color: #2fcc71;
+    font-style: italic !important;    
+    font-size: 12px !important;
+}
+
+/deep/ .cardButton {
+    background-color: #2FCC71;
+    color: white;
+    font-size: 13px;
+    padding: 0.6rem;
+    width: 70% !important;
+    margin: 2%;
+    margin-left: 35px;
+    font-size: 12px !important;
+}
+/deep/ .carousel-control-prev-icon {
+  color: black !important;
+  background-color: #2176FF;
+ }
+ 
+ /deep/ .carousel-control-next-icon {
+  color: black !important;
+  background-color: #2176FF;
+ }
+
+ 
+
+ /deep/ .carousel-control-next, 
+ /deep/ .carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6%;
+  height: 40px;
+  color: #007bff;
+  background-color: #007bff;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  opacity: 1;
+  transition: opacity .15s ease;
+}
+
+  p.lexError {
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    text-align: right;
+    min-width: 50%;
+    max-width: 85%;
+    float: right;
+    background-color: #f77;
+    font-size: 12px !important;
+}
+

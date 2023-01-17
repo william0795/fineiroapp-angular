@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>8CE6B89B-09AA-47C0-AB9A-DBC5353A1234</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="8.5" cy="8.5" r="8.02777778"></circle>
+        <filter x="-21.8%" y="-15.6%" width="143.6%" height="143.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.217164855 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Agenda-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="agenda-0001" transform="translate(-1118.000000, -504.000000)">
+            <g id="Convenios-no-sincronizados" transform="translate(1120.000000, 505.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FF5964" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group" transform="translate(7.555556, 3.777778)" fill="#FFFFFF">
+                    <path d="M1.18055556,6.61111111 C0.528552726,6.61111111 0,7.13966384 0,7.79166667 C0,8.4436695 0.528552726,8.97222222 1.18055556,8.97222222 C1.83255839,8.97222222 2.36111111,8.4436695 2.36111111,7.79166667 C2.36111111,7.13966384 1.83255839,6.61111111 1.18055556,6.61111111 Z" id="Icon-Path"></path>
+                    <path d="M1.13333333,4.72222222 C1.6549356,4.72222222 2.07777778,4.29938004 2.07777778,3.77777778 L2.07777778,0.944444444 C2.07777778,0.422842181 1.6549356,0 1.13333333,0 C0.61173107,0 0.188888889,0.422842181 0.188888889,0.944444444 L0.188888889,3.77777778 C0.188888889,4.29938004 0.61173107,4.72222222 1.13333333,4.72222222 Z" id="Icon-Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

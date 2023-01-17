@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>D53E6B38-E0AD-4275-834D-DFD38134766D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="8.5" cy="8.5" r="8.5"></circle>
+        <filter x="-20.6%" y="-14.7%" width="141.2%" height="141.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.217164855 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Agenda-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="agenda-0001" transform="translate(-861.000000, -504.000000)">
+            <g id="Convenio-sincronizado" transform="translate(863.000000, 505.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#3962E6" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="simple-line-icons:check" transform="translate(4.760000, 6.120000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#FFFFFF">
+                    <g id="Icon">
+                        <path d="M6.32678014,0.135017983 L2.45126398,4.03637092 L0.7072817,2.29238865 C0.621159119,2.20626607 0.52211815,2.16320478 0.410158794,2.16320478 C0.298199438,2.16320478 0.19915847,2.20626607 0.113035888,2.29238865 C0.0958113719,2.30961317 0.0785868556,2.33329688 0.0613623393,2.36343978 C0.044137823,2.39358268 0.0312194358,2.42157252 0.0226071776,2.4474093 C0.0139949195,2.47324607 0.00753572588,2.50123591 0.00322959681,2.53137881 C-0.00107653227,2.56152172 -0.00107653227,2.59166462 0.00322959681,2.62180752 C0.00753572588,2.65195043 0.0139949195,2.68209333 0.0226071776,2.71223623 C0.0312194358,2.74237914 0.044137823,2.77036898 0.0613623393,2.79620575 L0.113035888,2.87371607 L2.16705946,4.91482126 C2.24456978,5.00094384 2.34145768,5.04400513 2.45772317,5.04400513 C2.57398865,5.04400513 2.67087656,5.00094384 2.74838688,4.91482126 L2.80006043,4.86314771 L6.92102595,0.716345408 C6.99853628,0.638835084 7.03729144,0.54194718 7.03729144,0.425681695 C7.03729144,0.30941621 6.99853628,0.212528306 6.92102595,0.135017983 C6.76600531,-0.0200026641 6.59806627,-0.0415333095 6.41720885,0.0704260465 C6.38275982,0.0876505628 6.35261692,0.109181208 6.32678014,0.135017983 Z" id="Icon-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+   
+
+.form-control.input * {
+    max-width: 55.1px !important;
+  }
+
+    .modal-header {
+        font-family: "Open Sans", "Helvetica", "Arial", "serif" !important;
+        height: 20px;
+        top: -21px;
+        border: none !important;
+        button {
+            span {
+                font-size: 35px;
+                font-weight: 300;
+                color: #adb5bd;
+                position: relative;
+                top: -9px;
+                left: -5px;
+            }
+        }
+    }
+    .title {
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        position: relative;
+    }
+    .modal-body {
+        font-family: "Open Sans", "Helvetica", "Arial", "serif" !important;
+        font-size: 12px;
+
+        input.form-control{
+            height: 38px;
+            box-shadow: none;
+            border-radius: 6px;
+            text-transform: capitalize;
+        }
+
+        textarea.form-control{
+            box-shadow: none;
+            border-radius: 6px;
+        }
+
+        label{
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    .buttons {
+        margin-bottom: 30px;
+        .btn {
+            color:white;
+            background-color: #3962E6;
+            box-shadow: none;
+            font-size: 13px;
+            width: 97px;
+            height: 41px;
+            border-radius: 6px;
+        }
+        button:not(:disabled):not(.disabled):active:focus{
+            -webkit-box-shadow: 0 0 0 0 #2FCC71  !important;
+            box-shadow: 0 0 0 0 #2FCC71 !important;
+            border-color: #2FCC71 !important;
+          }
+        
+          button:not(:disabled):not(.disabled):active{
+              background-color: #2FCC71 !important;
+              border-color: #2FCC71 !important;
+          }
+
+          .btn-cancelar{
+              color:  #3962E6;
+              background-color: white;
+              border-color:  #3962E6;
+          }
+    }
+    .email-input {
+            text-transform: lowercase !important;
+    }

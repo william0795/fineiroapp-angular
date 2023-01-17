@@ -1,0 +1,22 @@
+
+    <div *ngIf="show" class="card mb-3 bg-white  border-gray" [class] ="cssClassHeight" style="max-width: 30rem; z-index: 1;  position: absolute; right: 0;display:flex;height: 80%;padding-right: 5px;">
+        <div class="card-header border-success content-chatbot-header" >
+            <div class="container">
+                <div class="row" style="display: flex;">
+                    <div class="col text-left"><i class="far fa-question-circle"></i> Centro de Ayuda</div>
+                    <div class="col-md-2 text-right"  (click)="closeChat()" style="cursor: pointer;">X</div>
+                </div>                
+                
+            </div>
+        </div>
+        <div class="card-body text-success  bg-white border-gray" style=" padding:2px;display: flex;" >
+            <div id="conversation" class="bg-transparent" style="align-items: stretch;height:100%;width: 100%;overflow: scroll">
+                <!-- <ng-template chatbotHost></ng-template> -->
+                <ng-container #chatbotHost></ng-container>                             
+            </div>
+        </div>
+        <div class="card-footer bg-white border-gray">
+            <input type="text" id="chatText" #chatText (keypress)="pushChatBot($event)" class="form-control" size="250" value="" placeholder="¿En qué podemos ayudarte?">
+            <i _ngcontent-dvr-c162="" aria-hidden="true" class="fa fa-search search-user ayuda"></i>
+        </div>
+    </div>

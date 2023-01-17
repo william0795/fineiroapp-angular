@@ -1,0 +1,27 @@
+<div class="main-content home-select-modulo">
+  <app-chatbot [show]="showChat" (closed) = "handleClosedChat($event)"></app-chatbot>
+
+    <div class="fondo-modulo">
+
+      
+        <img class="SelectModulo" src="assets/images/phantom/iconoModulo/{{datamodulo['codigo']}}f.png" width="130" height="130" alt="">
+      
+      
+      <span class="SelectModuloNombre">{{datamodulo['nombre'] | titlecase}}</span>
+    </div>
+  </div>
+  <div *ngIf="refreshPage"  class="popup-inactiva-user">
+    <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">
+      <div aria-labelledby="swal2-title" aria-describedby="swal2-content" class="swal2-popup swal2-modal swal2-show popup-suc active-user loading errorMensaje" tabindex="-1" role="dialog" aria-live="assertive" aria-modal="true" style="display: flex;">
+        <div class="text-inac">
+          <h2 class="title-suc iu">Inactividad</h2>
+              <p class="text-loading">Se ha detectado que sobrepasó el tiempo máximo de inactividad.<br> Si desea matenerse conectado hacer clic en aceptar </p>
+        </div>
+        <button class="btn btn-regfa selectRol errorMensaje"
+                (click)="aceptaRefresh()"
+                type="button"
+                name="button">Aceptar</button>
+      </div>
+    </div>
+  </div>
+

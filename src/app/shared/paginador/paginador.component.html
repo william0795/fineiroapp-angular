@@ -1,0 +1,16 @@
+
+ <div class="d-flex justify-content-center content-custom-paginador mt-5">
+    <ngb-pagination #pagination [collectionSize]="totalDatos" [pageSize]="datosPorpagina"  [(page)]="page" [maxSize]="maxSize" [rotate]="true" [boundaryLinks]="true" (pageChange)="onPageChange(page)">
+        <ng-template ngbPaginationFirst> <img src="assets/images/icons/first.svg" alt="firstIcon"> </ng-template>
+        <ng-template ngbPaginationLast>  <img src="assets/images/icons/last.svg" alt="lastIcon">  </ng-template>
+        <ng-template ngbPaginationPrevious> <img src="assets/images/icons/previus.svg" alt="previusIcon"> </ng-template>
+        <ng-template ngbPaginationNext> <img src="assets/images/icons/next.svg" alt="nextIcon"> </ng-template>
+        <ng-template ngbPaginationEllipsis>...</ng-template>
+        <ng-template ngbPaginationNumber let-page>{{ page }}</ng-template>
+    </ngb-pagination>
+
+</div>
+
+<div class="d-flex justify-content-center content-pageNumber mb-5">
+    (Página {{ page }} de {{ pagination.pageCount  }}  )
+</div>

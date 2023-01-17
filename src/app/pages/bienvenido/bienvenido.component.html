@@ -1,0 +1,47 @@
+<!-- <app-navbar></app-navbar> -->
+<app-cabecera></app-cabecera>
+
+<!-- <div class="row" style="margin-bottom: 12px;">
+<div class = "col-md-12"  style = "text-align: center;" >
+This page will refresh in <br>{{minutes}}<br> Min {{seconds}} Sec
+</div>
+</div>
+
+<!-- <kt-auto-refresh
+          (TimerExpired)="refresh()"
+          [ElapsTime] = "ElapsTime"
+          [Reset] = "Reset"
+          >
+</kt-auto-refresh> -->
+<!-- <div class="">
+  <span>Reset:{{Reset}}</span>
+</div>  -->
+<div class="main-content">
+      <div class="table-content">
+        <table class="table table-hover table-borderless table-sm mb-5 ">
+          <thead class="thead">
+            <tr>
+              <th class="border border-left-0"> Cuenta </th>
+              <th class="border border-left-0"> Fecha </th>
+              <th class="border border-left-0"> Descripcion </th>
+              <th class="border border-left-0"> Categoria </th>
+              <th class="border border-left-0"> Monto </th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let mov of dataMovimientos; let i=index" >
+            <tr *ngIf="i + 1  <= valmax" class="border border-left-0 border-right-0 border-top-0">
+              <td>{{mov.account.name}}</td>
+              <td>{{mov.date}}</td>
+              <td>{{mov.description}}</td>
+              <td>Sin Categoria</td>
+              <td>{{mov.amount}}</td>
+             
+            </tr>
+          </tbody>
+        </table>
+        <app-paginador [totalDatos]="20" [datosPorpagina]="10"
+          (paginaSeleccionada)="PageChange($event)"></app-paginador>
+
+      </div>
+</div>
+

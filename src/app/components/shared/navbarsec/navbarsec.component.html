@@ -1,0 +1,46 @@
+<div *ngIf="validMenu" id="main">
+  <div class="">
+    <div  style="text-align:center;">
+    </div>
+    <nav>
+      <div class="nav-fostrap"
+          [ngClass]="{'visible': navbarfostrap}">
+          <div class="menu-left">
+            <ul>
+              <li *ngFor="let menu of datamenu" routerLinkActive="active">
+                <a class="opcion-menu-navbarSec" [routerLink]="[menu.vista]">{{menu.descripcionOpcion}}</a>
+              </li>
+              <!-- <li routerLinkActive="active"><a [routerLink]="['/seguridad/gestion-rol']">Gestión de Rol</a></li>
+              <li><a href="javascript:void(0)">Parametrización</a>
+                <ul class="dropdown">
+                  <li><a href="">HTML</a></li>
+                  <li><a href="">CSS</a></li>
+                  <li><a href="">Javascript</a></li>
+                  <li><a href="">JQuery</a></li>
+                </ul>
+              </li> -->
+
+              <div class="menu-rigth">
+                <!-- <li><a href="">Ayuda</a></li> -->
+                <li class="menuSecModulos"><a href="javascript:void(0)" >{{datamodulo.nombre | titlecase}} <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                  <ul class="dropdown">
+                    <li *ngFor="let items of datamod"><a (click)="redirect(items.nombreModulo,items.codigoModulo)">{{items.nombreModulo | titlecase}}</a></li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+
+      </div>
+      <div class="nav-bg-fostrap">
+        <div (click)="mostrarmenu()"
+            class="navbar-fostrap"
+            > <span></span> <span></span> <span></span> </div>
+        <a href="" class="title-mobile"></a>
+      </div>
+    </nav>
+    <div class='content'>
+    </div>
+</div>
+</div>

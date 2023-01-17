@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5A331DA1-0387-4319-B668-905C98012B14</title>
+    <defs>
+        <rect id="path-1" x="258" y="675" width="1164" height="353" rx="6.48"></rect>
+        <filter x="-0.6%" y="-1.4%" width="101.2%" height="104.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0875226449 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="CONVENIOS*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="97" transform="translate(-920.000000, -828.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1680" height="1269"></rect>
+            <g id="Rectangle-Copy-14">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <rect stroke="#DBE0E4" stroke-width="0.81" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="258.405" y="675.405" width="1163.19" height="352.19" rx="6.48"></rect>
+            </g>
+            <g id="Group-4" transform="translate(853.000000, 790.000000)" stroke="#3962E6" stroke-width="1.053">
+                <g id="Group-3" transform="translate(0.000000, 2.000000)">
+                    <path d="M502.693012,27.5265 C505.432429,27.5265 506.433208,27.7931201 507.436683,28.3297846 C508.399574,28.8447441 509.155256,29.6004262 509.670215,30.5633167 C510.20688,31.5667921 510.4735,32.5675707 510.4735,35.306988 L510.4735,35.306988 L510.4735,175.693012 C510.4735,178.432429 510.20688,179.433208 509.670215,180.436683 C509.155256,181.399574 508.399574,182.155256 507.436683,182.670215 C506.433208,183.20688 505.432429,183.4735 502.693012,183.4735 L502.693012,183.4735 L8.30698805,183.4735 C5.56757067,183.4735 4.56679206,183.20688 3.56331672,182.670215 C2.6004262,182.155256 1.84474409,181.399574 1.32978461,180.436683 C0.793120124,179.433208 0.5265,178.432429 0.5265,175.693012 L0.5265,175.693012 L0.5265,35.306988 C0.5265,32.5675707 0.793120124,31.5667921 1.32978461,30.5633167 C1.84474409,29.6004262 2.6004262,28.8447441 3.56331672,28.3297846 C4.56679206,27.7931201 5.56757067,27.5265 8.30698805,27.5265 L8.30698805,27.5265 Z" id="Shape"></path>
+                </g>
+            </g>
+            <g id="Group-5" transform="translate(867.000000, 826.000000)">
+                <rect id="Rectangle" stroke="#DBE0E4" fill-opacity="0.0584298514" fill="#8B97A3" x="0" y="0" width="84" height="28" rx="4"></rect>
+                <g id="Actions-/-Navigation-/-close-/-24" opacity="0.5" transform="translate(54.000000, 2.000000)" fill="#878D96">
+                    <polygon id="Fill" points="18 7.05 16.95 6 12 10.95 7.05 6 6 7.05 10.95 12 6 16.95 7.05 18 12 13.05 16.95 18 18 16.95 13.05 12"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

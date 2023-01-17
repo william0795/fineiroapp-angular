@@ -1,0 +1,136 @@
+
+
+div.container-fluid.wacom{
+    .wacom{
+        height: 148px;
+        width: 338px;
+        border: 1px solid #d3d3d3;
+        position: absolute;
+        top: 114px;
+        left: 93px;
+        img{
+            width: 100% !important;
+        }
+    }
+
+    button{
+        box-shadow: none;
+    }
+
+    button.btn:not(:disabled):not(.disabled):active:focus{
+        -webkit-box-shadow: 0 0 0 0 #2FCC71  !important;
+        box-shadow: 0 0 0 0 #2FCC71 !important;
+        border-color: #2FCC71 !important;
+      }
+    
+      button.btn:not(:disabled):not(.disabled):active{
+          background-color: #2FCC71 !important;
+          border-color: #2FCC71 !important;
+      }
+
+
+    .img-wacom{
+        width: 500px;
+    }
+
+    .btn-capturar{
+        color: #3962e6;
+        font-size: 11px;
+        position: absolute;
+        top: 280px;
+        left: 180px;
+        background-color: white;
+        font-weight: 600;
+        border-radius: 5px;
+        i{
+            color: #3962e6;
+        }
+    }
+
+    .btn-limpiar{
+        background-color: white;
+        position: absolute;
+        top: 280px;
+        left: 300px;
+        border-radius: 5px;
+        img{
+            height: 18px;
+        }
+    }
+
+
+    .btn-opt{
+        width: 30px;
+    }
+
+    .btn-license{
+        background-color: white;
+        position: absolute;
+        top: 130px;
+        left: 463px;
+        font-size: 12px;
+        border-radius: 5px;
+        i{
+            color: #3962e6;
+        }
+    }
+
+    .btn-console{
+        background-color: white;
+        position: absolute;
+        top: 165px;
+        left: 463px;
+        font-size: 12px;
+        border-radius: 5px;
+        i{
+            color: #3962e6;
+        }
+    }
+
+    .btn-verify{
+        background-color: white;
+        position: absolute;
+        top: 195px;
+        left: 463px;
+        font-size: 12px;
+        border-radius: 5px;
+        i{
+            color: #3962e6;
+        }
+    }
+
+    .btn-details{
+        background-color: white;
+        position: absolute;
+        top: 225px;
+        left: 463px;
+        font-size: 12px;
+        border-radius: 5px;
+        i{
+            color: #3962e6;
+        }
+    }
+
+    .content-consola{
+        font-size: 12px;
+    }
+
+    .content-correo{
+        position: absolute;
+        top: 320px;
+        left: 120px;
+        font-size: 12px;
+        color:white;
+    }
+
+    .content-icon-email{
+        position: absolute;
+        top: 320px;
+        left: 430px;
+        background-color: white;
+        i{
+            color: #d24141;
+        }
+    }
+    
+}

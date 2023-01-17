@@ -1,0 +1,82 @@
+
+<div class="container-fluid mx-0 wacom">
+
+    <app-toast [message]="message" [codigo]="codigoRespuestaHttp"  *ngIf="muestraMensajeAlerta"></app-toast>
+
+    <app-loading *ngIf="processing"></app-loading>
+
+
+    <div class="row  mt-3">
+
+        <div class="col-12">
+
+            <img class="img-wacom" src="assets/images/phantom/wacom.png" alt="">
+
+
+            <div id="imageBox" class="boxed wacom"></div>
+
+            <button class="btn btn-capturar px-2 py-1" (click)="capturarFirma()">
+                <i class="fas fa-pen-fancy"></i>
+                Capturar Firma
+            </button>
+
+            <button class="btn btn-limpiar btn-opt px-2 py-0" data-toggle="tooltip" placement="bottom" ngbTooltip="Limpiar" onclick="clearSignature()">
+                <img src="assets/images/icons/clean-icon.svg" alt="">
+            </button>
+
+            <button class="btn-console btn btn-opt px-2 py-1" data-toggle="tooltip" placement="bottom" ngbTooltip="Mostrar Consola" (click)="datosWacom.muestraConsola= !datosWacom.muestraConsola">
+                <i class="fas fa-terminal"></i>
+            </button>
+
+
+            <button class="btn-license btn btn-opt px-2 py-1" data-toggle="tooltip" placement="bottom" ngbTooltip="Información de Licencia"  onclick="aboutBox(sigCtl)">
+                <i class="far fa-id-badge"></i>
+            </button>
+
+            <button class="btn-verify btn-opt btn px-2 py-1" data-toggle="tooltip" placement="bottom" ngbTooltip="Verificar" onclick="verifySignedData()"  *ngIf="datosWacom.muestraConsola" >
+                <i class="far fa-eye"></i>
+            </button>
+
+            <button class="btn-details btn btn-opt px-2 py-1" data-toggle="tooltip" placement="bottom" ngbTooltip="Detalles de Firma" onclick="displaySignatureDetails(sigObj)" *ngIf="datosWacom.muestraConsola" >
+                <i class="fas fa-info"></i>
+            </button>
+
+
+            <div class="content-consola" [ngClass]="{ 'd-none': !datosWacom.muestraConsola }">
+                <textarea cols="75" rows="10" id="txtDisplay" class="border border-rounded p-3" ></textarea>
+            </div>
+
+            <div class="content-correo">
+                Correo Electrónico:  {{ correoPaciente }}
+            </div>
+
+            <div class="content-icon-email px-1 cursor-link" (click)="abreModalCorreoPaciente()" >
+                <i class="far fa-envelope"></i>
+            </div>
+        </div>
+
+        <div class="col">
+
+           
+
+            <table class="d-none" >
+              <tr>
+                <td>
+                First name: <input type="text" id="fname" [value]="datosWacom.nombres"/>
+                </td>
+                <td>
+                Last name: <input type="text" id="lname" [value]="datosWacom.appellidos"/>
+                </td>
+              </tr>
+            </table>
+            
+            <div class="d-none" >
+                <input type="checkbox" id="chkUseB64Image"/>Use base-64 signature image
+                <input type="checkbox" id="chkShowSigText"  />Output SigText to form <br/><br/>
+            </div>
+
+          </div>
+
+    </div>
+
+</div>

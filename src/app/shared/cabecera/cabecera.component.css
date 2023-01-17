@@ -1,0 +1,51 @@
+
+@font-face {
+  font-family: open-sans;
+  src: url("../../../assets/fonts/open/open-sans.ttf") format("opentype");
+}
+
+.mobile{
+  margin-left: 2px;
+}
+
+.navbar{
+  display: flex;
+  background-color: #17307b !important;
+  color: white;
+  padding: .6% 2.5% .6% 3.1%;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%)
+}
+.cabecera-content{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.logo,
+.logout-cabecera{
+  width: 20%;
+}
+.ttitle-cabecera span{
+  font-size: 28px;
+  font-weight: bold;
+}
+.logout-cabecera{
+  text-align: end;
+  cursor: pointer;
+}
+.ttitle-cabecera{
+  width: 60%;
+  text-align: center;
+}
+.data-user-menu.perfil{
+  color: #0000FF;
+}
+.data-user-menu.perfil:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.data-user-menu.correo{
+  color: #dbe0e4;
+}
+
+

@@ -1,0 +1,67 @@
+
+<div class="bg-lights">
+</div>
+<nav [ngClass]="{'mostLogo': mostLogo==false }" class="navbar navbar-expand-lg navbar-light bg-light">
+  <button (click)="mostlogo()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a  class="navbar-brand desktop" ><img class="logo-ph-nav" src="assets/images/phantom/phanton-log.png" alt="" height="15"  width="108"></a>
+  <a *ngIf="mostLogo"  class="navbar-brand mobile" style="display:none;" ><img class="logo-ph-nav" src="assets/images/veris/veris-logo.png" alt="" height="28"  width="65"></a>
+
+  <div class="cont-option">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="logo-comp">
+        <img src="assets/images/veris/veris-logo.png" alt="" height="35" width="80">
+      </div>
+      <ul class="navbar-nav">
+        <li *ngIf="disabeled" class="nav-item dropdown sucursal">
+          <a class="nav-link disabeledSucursalHeader dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sucursal
+            <i class="fa fa-chevron-down suc" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li *ngIf="disabeled==false" class="nav-item dropdown sucursal">
+          <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{sucursal['nombre']  | titlecase}}
+            <i class="fa fa-chevron-down suc" aria-hidden="true"></i>
+          </a>
+          <div [ngClass]="{'authMail': usuarioVerificate}" class="dropdown-menu sucursal" aria-labelledby="navbarDropdownMenuLink">
+            <a (click)="selectsuc(item.nombreSucursal,item.codigoSucursal,item.codigoEmpresa)" *ngFor="let item of datasuc" class="dropdown-item">{{item.nombreSucursal | titlecase}}</a>
+            <!-- <a class="dropdown-item" href="#">Mall del Sol</a>
+            <a class="dropdown-item" href="#">Alborada</a>
+            <a class="dropdown-item" href="#">Guayaquil Sur</a>
+            <a class="dropdown-item" href="#">C.C El Dorado</a> -->
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{this.userauth  | titlecase}}
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </a>
+          <div class="img-config">
+            <img src="assets/images/phantom/icon-config/icon-config.png" alt="">
+          </div>
+          <div [ngClass]="{'authMail': usuarioVerificate}" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="date-user-menu">
+              <div class="image-date-user-menu">
+                <img class="imagePreviewUp" width="50" height="50" [src]="src | domseguro" alt="">
+              </div>
+              <div class="info-date-user-menu">
+                <span class="data-user-menu">{{data['data'].nombreUsuario | titlecase}}</span>
+                <span class="data-user-menu correo">{{data['data'].correoElectronico}}</span>
+                <span *ngIf="disabeled==false" (click)="verPefil()" class="data-user-menu perfil">Ver Perfil de Usuario</span>
+                <span *ngIf="disabeled" class="data-user-menu perfil disabled">Ver Perfil de Usuario</span>
+              </div>
+            </div>
+
+
+            <button (click)="perfilContrasena()" [disabled]="disabeled" class="btn dropdown-item btn-logout" type="button" name="button">Cambiar Contraseña</button>
+            <button (click)="showChat.next();" class="btn dropdown-item btn-logout" type="button" name="button">Ayuda</button>
+            <button (click)="salir()" class="btn dropdown-item btn-logout" type="button" name="button">Cerrar Sesión</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
